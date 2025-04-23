@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Proposta</title>
+</head>
+<body>
+    <p><a href="../../index.html">Página inicial</a></p>
+
+    <fieldset>
+        <legend>Criação de Proposta</legend>
+        
+        <p>
+            <select name="client" id="Clientselector">
+                <option value="">Selecione um Cliente</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="Formulários">Selecionar tipo de Propostas: </label>
+            <select name="Formulários" id="idformularios">
+                    <option value="Simples" selected>Simples</option>
+                    <option value="Moderno">Moderno</option>
+                    <option value="Corporativo" >Corporativo</option>
+            </select>
+        </p>
+    
+        <p>
+            <label for="Descrição" id="textdescrição">Descrição do Serviço: </label>
+            <input type="text" name="Descrição" id="iddescriçao">
+        </p>
+    
+        <p>
+            <label for="Prazo" id="textprazo">Prazo do Trabalho: </label>
+            <input type="text" name="Prazo" id="idprazo">
+        </p>
+    
+        <p>
+            <label for="Preço" id="textpreço">Preço: </label>
+            <input type="text" name="Preço" id="idpreço">
+        </p>
+    
+        <input type="submit" value="Gerar Proposta" id="proposalsubmit">
+    </fieldset>
+    
+    <p>
+        <a href="history.html">Visualizar histórico</a>
+    </p>
+
+    <script src="../../public/js/Proposalcreator.js"></script>
+<script src="../../public/js/Proposalcreator.js"></script>
+
+
+</body>
+</html>

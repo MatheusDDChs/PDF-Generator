@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Freelancer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/jspdf.umd.min.js" integrity="sha512-ad3j5/L4h648YM/KObaUfjCsZRBP9sAOmpjaT2BDx6u9aBrKFp7SbeHykruy83rxfmG42+5QqeL/ngcojglbJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <p><a href="src/pages/history.html">Histórico de Propostas</a></p>
+
+    <p><a href="src/pages/propolse.html">Cadastrar Propostas</a></p>
+
+    <h1>Gerador de Propostas Web</h1>
+    <legend>Gerador de propostas PDF com BC. 100% Open Source.</legend>
+
+<!-- #GERADOR DE PROPOSTAS -->
+    
+<h2>Gerar uma Proposta</h2>
+
+<fieldset>
+    <legend>Cadastro de Clientes</a></legend>
+    <p>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="idnome">
+    </p>
+
+    <p>
+        <label for="E-mail">e-mail: </label>
+        <input type="text" name="E-mail" id="ide-mail">
+    </p>
+
+    <p>
+        <label for="razao">Razão Social: </label>
+        <input type="text" name="razao" id="idrazao">
+    </p>
+
+    <p>
+        <label for="CNPJ">CNPJ</label>
+        <input type="text" name="CNPJ" id="idcnpj">
+    </p>
+
+    <input type="submit" value="Cadastrar Cliente" id="clientsubmit">
+</fieldset>
+
+<script src="public/js/clientcreator.js"></script>
+<script src="public/js/Proposalcreator.js"></script>
+<script src="public/js/PDFCreator.js"></script>
+</body>
+</html>

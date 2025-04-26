@@ -26,7 +26,7 @@ client.forEach(client => {
 class Proposta {
     constructor(id, clientId, description, prazo, price) {
         this.id = id
-        this.clientidId = clientId
+        this.clientId = clientId
         this.description = description
         this.prazo = prazo
         this.price = price
@@ -35,10 +35,17 @@ class Proposta {
 
 const PropostaData = JSON.parse(localStorage.getItem("PropostaData")) || []
 
-submit.addEventListener("click", () => {
+
+function CreatePropolse() {
+    // CRIAR A PROPOSTA   
+    if (clientslct.value === "") {
+        alert("Por favor, selecione um cliente!");
+        return;
+    }
+
     const order = new Proposta(
         id = PropostaData.length + 1,
-        clientidId = client.length + 1,
+        clientId = clientslct.value,
         Prodescription.value,
         Proprazo.value,
         Propreco.value
@@ -46,35 +53,15 @@ submit.addEventListener("click", () => {
 
     PropostaData.push(order)
     console.log(PropostaData)
-})
+    console.log(clientslct.value)
 
-localStorage.setItem("PropostaData", JSON.stringify(PropostaData))
+    localStorage.setItem("PropostaData", JSON.stringify(PropostaData))
+}
+
 
 // <SELECT>
 let Options = document.querySelector("#idformularios")
 let OptionsValue = Options.value
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Options.addEventListener("change", () => {

@@ -5,42 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposta Freelancer</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/jspdf.umd.min.js" integrity="sha512-ad3j5/L4h648YM/KObaUfjCsZRBP9sAOmpjaT2BDx6u9aBrKFp7SbeHykruy83rxfmG42+5QqeL/ngcojglbJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/input.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-    <p><a href="src/pages/history.html">Histórico de Propostas</a></p>
+    <p><a class="underline text-blue-700" href="src/pages/history.html">Histórico de Propostas</a></p>
 
-    <p><a href="src/pages/propolse.html">Cadastrar Propostas</a></p>
+    <p><a class="underline text-blue-700" href="src/pages/propolse.html" >Cadastrar Propostas</a></p>
 
-    <h1>Gerador de Propostas Web</h1>
+
+
+    <h1 class="text-3xl p-2 font-medium">Gerador de Propostas Web</h1>
+
     <legend>Gerador de propostas PDF com BC. 100% Open Source.</legend>
 
 <!-- #GERADOR DE PROPOSTAS -->
-    
-<h2>Gerar uma Proposta</h2>
 
-<fieldset>
-    <legend>Cadastro de Clientes</a></legend>
+<fieldset class="border block m-4 p-2 rounded">
+    <legend class="text-2xl p-1">Cadastro de Clientes</a></legend>
     <p>
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="idnome">
+        <label for="nome"></label>Nome: </label>
+        <input class="border rounded p-1 h-7 mb-1" type="text" name="nome" id="idnome">
     </p>
 
     <p>
         <label for="E-mail">e-mail: </label>
-        <input type="text" name="E-mail" id="ide-mail">
+        <input class="border rounded p-1 h-7 mb-1" type="text" name="E-mail" id="ide-mail">
     </p>
 
     <p>
-        <label for="razao">Razão Social: </label>
-        <input type="text" name="razao" id="idrazao">
+        <label for="razao" class="btn">Razão Social: </label>
+        <input class="border rounded p-1 h-7 mb-1 " type="text" name="razao" id="idrazao">
     </p>
 
     <p>
-        <label for="CNPJ">CNPJ</label>
-        <input type="text" name="CNPJ" id="idcnpj">
+        <label for="CNPJ">CNPJ</label> 
+        <input class="border rounded p-1 h-7 mb-1" type="text" name="CNPJ" id="idcnpj">
     </p>
 
-    <input type="submit" value="Cadastrar Cliente" id="clientsubmit">
+    <input class="border rounded px-2 transition-all hover:bg-blue-300" type="submit" value="Cadastrar Cliente" id="clientsubmit">
 </fieldset>
 
 <script src="public/js/clientcreator.js"></script>

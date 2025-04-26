@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.4",
+    "postcss": "^8.5.3"
+  },
+  "name": "pdf-generator",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusDDChs/PDF-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusDDChs/PDF-Generator/issues"
+  },
+  "homepage": "https://github.com/MatheusDDChs/PDF-Generator#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.4"
+  }
+  
+}

@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico Freelancer</title>
+    <link rel="stylesheet" href="../../public/css/history.css">
 </head>
 <body>
     <p><a href="../../index.html">Página inicial</a></p>
+    
     <h1>Histórico de Propostas</h1>
 
-    <div id="divProposal">
-        <p id="Pronumber"></p>
-        <p id="ClientName"></p>
-        <p id="ProDesc"></p>
-        <button id="Edit">Editar</button>
-        <button id="PDFGenerate">PDF</button>
+    <div id="propostaslist">
+
     </div>
 
-    <script src="public/js/PDFCreator.js"></script>
+        <button id="Edit">Editar</button>
+        <button id="PDFGenerate">PDF</button>
+
+
     <script src="../../public/js/history.js"></script>
+    <script src="../../public/js/PDFCreator.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", RenderPropostas)
+    </script>
 </body>
 </html>

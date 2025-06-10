@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f172a; /* slate-900 */
+  color: #f1f5f9;            /* slate-100 */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Link principal */
+a {
+  color: #38bdf8; /* sky-400 */
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+a:hover {
+  color: #7dd3fc; /* sky-300 */
+}
+
+/* Título */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #e2e8f0; /* slate-200 */
+}
+
+/* Lista de propostas */
+#propostaslist {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e293b; /* slate-800 */
+  border: 1px solid #334155; /* slate-700 */
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões */
+button {
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 1rem;
+  }
+
+  #propostaslist {
+    padding: 0.75rem;
+  }
+
+  button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}

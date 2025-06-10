@@ -12,56 +12,53 @@
 </head>
 
 
-<body class="mb-0 bg-slate-100 flex flex-col justify-center items-center"
-style="font-family: Poppins, sans-serif;">
+<body class="min-h-screen bg-slate-900 text-slate-100 flex flex-col justify-between items-center font-[Poppins]">
 
+  <header class="bg-slate-800 w-full p-6 text-center shadow-md">
+    <h1 class="text-3xl font-semibold mb-2">Gerador de Propostas Web</h1>
+    <p class="text-slate-300">Gerador de propostas PDF com BC. 100% Open Source.</p>
+  </header>
 
-    <header class="bg-slate-600 w-full p-4 items-center flex flex-col justify-center gap-4 text-white">
-        <h1 class="text-3xl p-2 font-medium">Gerador de Propostas Web</h1>
-        <legend>Gerador de propostas PDF com BC. 100% Open Source.</legend>
-    </header>
+  <main class="flex-grow w-full max-w-md px-4 py-8">
+    <fieldset class="border border-slate-700 p-6 rounded-lg shadow-xl bg-slate-800 space-y-4">
+      <legend class="text-2xl text-blue-400 font-medium mb-4">Cadastro de Clientes</legend>
 
-<!-- #GERADOR DE PROPOSTAS -->
+      <div>
+        <label for="idnome" class="block mb-1 text-slate-300">Nome:</label>
+        <input type="text" name="nome" id="idnome" class="w-full p-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
 
-<main>
+      <div>
+        <label for="ide-mail" class="block mb-1 text-slate-300">E-mail:</label>
+        <input type="text" name="E-mail" id="ide-mail" class="w-full p-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
 
-<fieldset class=" border m-4 p-2 rounded flex flex-col justify-center shadow-lg">
-    <legend class="text-2xl p-1">Cadastro de Clientes</a></legend>
-    <p>
-        <label for="nome"></label>Nome: </label>
-        <input class="items-start border rounded p-1 h-7 mb-1" type="text" name="nome" id="idnome">
-    </p>
+      <div>
+        <label for="idrazao" class="block mb-1 text-slate-300">Razão Social:</label>
+        <input type="text" name="razao" id="idrazao" class="w-full p-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
 
-    <p>
-        <label for="E-mail">e-mail: </label>
-        <input class="items-start border rounded p-1 h-7 mb-1" type="text" name="E-mail" id="ide-mail">
-    </p>
+      <div>
+        <label for="idcnpj" class="block mb-1 text-slate-300">CNPJ:</label>
+        <input type="text" name="CNPJ" id="idcnpj" class="w-full p-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
 
-    <p>
-        <label for="razao" class="btn">Razão Social: </label>
-        <input class="items-start border rounded p-1 h-7 mb-1 " type="text" name="razao" id="idrazao">
-    </p>
+      <div class="pt-4 text-center">
+        <input type="submit" value="Cadastrar Cliente" id="clientsubmit"
+          class="px-6 py-2 bg-blue-500 hover:bg-blue-600 transition rounded text-white font-medium cursor-pointer">
+      </div>
+    </fieldset>
+  </main>
 
-    <p>
-        <label for="CNPJ">CNPJ: </label> 
-        <input class="items-start border rounded p-1 h-7 mb-1" type="text" name="CNPJ" id="idcnpj">
-    </p>
+  <footer class="bg-slate-800 w-full p-6 text-center mt-8">
+    <div class="space-y-2">
+      <p><a class="text-blue-400 hover:text-blue-300 transition underline" href="src/pages/history.html">Histórico de Propostas</a></p>
+      <p><a class="text-blue-400 hover:text-blue-300 transition underline" href="src/pages/propolse.html">Cadastrar Propostas</a></p>
+      <p><a class="text-blue-400 hover:text-blue-300 transition underline" href="src/pages/login.html">Voltar ao Login</a></p>
+    </div>
+  </footer>
+</body>
 
-    <input class="items-center border rounded px-10  py-2 transition-all hover:bg-blue-300" type="submit" value="Cadastrar Cliente" id="clientsubmit">
-</fieldset>
-
-</main>
-
-
-<footer class="bg-slate-700 w-full p-4 items-center flex flex-col justify-center gap-4">
-
-    <p><a class="underline text-white m-2 hover:text-blue-600" href="src/pages/history.html">Histórico de Propostas</a></p>
-    
-    <p><a class="underline text-white m-2 hover:text-blue-600" href="src/pages/propolse.html" >Cadastrar Propostas</a></p>
-
-    <p><a class="underline text-white m-2 hover:text-blue-600" href="src/pages/login.html" >Voltar ao Login</a></p>
-
-</footer>
 
 <script src="public/js/clientcreator.js"></script>
 <script src="public/js/Proposalcreator.js"></script>

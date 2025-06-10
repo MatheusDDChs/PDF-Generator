@@ -54,8 +54,6 @@ function RenderPropostas() {
             doc.text(`Prazo: ${proposta.prazo}`, 10, 70);
             doc.text(`Preço: R$ ${proposta.price}`, 10, 80);
 
-            doc.save(`proposta-${proposta.id}.pdf`);
-
             const pdfUrl = doc.output("bloburl");
             window.open(pdfUrl, "_blank");
         });
